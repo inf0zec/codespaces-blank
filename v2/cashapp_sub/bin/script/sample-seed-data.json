@@ -1,0 +1,82 @@
+{
+  "#Multiphase Direct Deposit": {
+    "data": {
+      "type": "SUBSCRIPTION_PLAN",
+      "id": "#Multiphase Direct Deposit",
+      "subscriptionPlanData": {
+        "name": "Direct Deposit",
+        "phases": [
+          {
+            "type": "SUBSCRIPTION_PHASE",
+            "id": "#Direct Deposit phase1",
+            "cadence": "MONTHLY",
+            "periods": 1,
+            "recurringPriceMoney": {
+              "amount": 100,
+              "currency": "USD"
+            }
+          },
+          {
+            "type": "SUBSCRIPTION_PHASE",
+            "id": "#Direct Deposit phase2",
+            "cadence": "WEEKLY",
+            "recurringPriceMoney": {
+              "amount": 1500,
+              "currency": "USD"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "#Direct Deposit Addon": {
+    "data": {
+      "type": "SUBSCRIPTION_PLAN",
+      "id": "#Direct Deposit Addon",
+      "subscriptionPlanData": {
+        "name": "Direct Deposit Addon",
+        "phases": [
+          {
+            "type": "SUBSCRIPTION_PHASE",
+            "id": "#Direct Deposit Addon phase1",
+            "cadence": "WEEKLY",
+            "periods": 2,
+            "recurringPriceMoney": {
+              "amount": 0,
+              "currency": "USD"
+            }
+          },
+          {
+            "type": "SUBSCRIPTION_PHASE",
+            "id": "#Direct Deposit Addon phase2",
+            "cadence": "MONTHLY",
+            "recurringPriceMoney": {
+              "amount": 8000,
+              "currency": "USD"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "#Allowance Enrollment Addon": {
+    "data": {
+      "type": "SUBSCRIPTION_PLAN",
+      "id": "#Allowance Enrollment Fees",
+      "subscriptionPlanData": {
+        "name": "Allowance Enrollment Fees",
+        "phases": [
+          {
+            "type": "SUBSCRIPTION_PHASE",
+            "id": "#Allowance Enrollment Fees",
+            "cadence": "WEEKLY",
+            "recurringPriceMoney": {
+              "amount": 1000,
+              "currency": "USD"
+            }
+          }
+        ]
+      }
+    }
+  }
+}
